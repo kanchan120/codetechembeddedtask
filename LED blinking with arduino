@@ -1,0 +1,13 @@
+//pin where the LED is connected
+const int ledpin = 13; //use pin 13 for onboard LED or external LED
+//setup runs once when the Arduino starts
+void  setup(){
+      pinmode(ledpin,OUTPUT); //set the LED pin as an output
+      }
+      //Loop runs repeatedly after setup
+      void loop(){
+           digitalWrite(ledpin,HIGH); //trun the LED on 
+           delay(1000);              // wait for 1 second(1000 miliseconds)
+           digitalWrite(ledpin,LOW); //turn the LED off
+           delay(1000);              //Wait for 1 second
+           }

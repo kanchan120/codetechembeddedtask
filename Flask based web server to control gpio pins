@@ -22,3 +22,21 @@ from flask import Flask, render_template,request
                         app.run(host="0.0.0.0",port=5000)
                         except keyboardInterrupt:
                                GPIO.cleanup()
+//create the web interface
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Automation</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        button { padding: 15px 30px; font-size: 18px; margin: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Home Automation System</h1>
+    <form action="/control" method="POST">
+        <button type="submit" name="action" value="on" style="background-color: green; color: white;">Turn On</button>
+        <button type="submit" name="action" value="off" style="background-color: red; color: white;">Turn Off</button>
+    </form>
+</body>
+</html>

@@ -11,36 +11,4 @@ void  setup(){
            digitalWrite(ledpin,LOW); //turn the LED off
            delay(1000);              //Wait for 1 second
            }
-write commiting
-1. When the program starts:
 
-The setup() function configures pin 13 as an output.
-
-
-
-2. During the loop():
-
-The LED connected to pin 13 is turned ON (HIGH) for 1 second.
-
-The LED is then turned OFF (LOW) for 1 second.
-
-This process repeats continuously.
-
-
-
-
-Output Timeline:
-
-1. Second 0: The LED turns ON.
-
-
-2. Second 1: The LED turns OFF.
-
-
-3. Second 2: The LED turns ON again.
-
-
-4. Second 3: The LED turns OFF again.
-
-
-5. The cycle continues indefinitely.
